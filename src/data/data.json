@@ -94,6 +94,25 @@
       },
       "isHot": true,
       "type": "event"
+    },
+    {
+      "id": "evt006",
+      "title": "富山の川をキレイに！ボランティア＆花植えイベント",
+      "description": "松川沿いの清掃活動と花植えを行うボランティアイベントです。活動後は参加者みんなでピクニック！自然が好きな人、地域に貢献したい人、新しい友達を作りたい人、誰でも歓迎です。",
+      "date": "2026-04-12",
+      "time": "09:00〜13:00",
+      "location": "松川べり（富山市）",
+      "imageUrl": "/images/event_006.jpg",
+      "tags": ["体験会", "参加費無料", "ご飯が食べられる"],
+      "deadline": "2026-04-10",
+      "applicationUrl": "https://example.com/apply/evt006",
+      "contact": {
+        "email": "volunteer@example.com",
+        "instagram": "@toyama_volunteer",
+        "line": "@volunteer_toyama"
+      },
+      "isHot": false,
+      "type": "event"
     }
   ],
   "communities": [

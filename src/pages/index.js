@@ -102,15 +102,11 @@ export default function Home() {
           />
         </div>
         <div className="hero-catchphrase" id="hero-catchphrase">
-          <div className="hero-catchphrase__inner">
-            <span className="hero-catchphrase__accent">✨</span>
-            <p className="hero-catchphrase__text">
-              富山で、新しい<em>ワクワク</em>を見つけよう
-            </p>
-            <span className="hero-catchphrase__accent">✨</span>
-          </div>
+          <p className="hero-catchphrase__text">
+            富山で新しい<em>ワクワク</em>を見つけよう
+          </p>
           <p className="hero-catchphrase__sub">
-            イベント・コミュニティ情報をまとめてチェック
+            イベントやコミュニティ情報をまとめてチェック
           </p>
         </div>
 
@@ -202,22 +198,25 @@ export default function Home() {
         </section>
 
         {/* 絞り込みタグ */}
-        <div className="filter-tags" id="filter-tags">
-          {data.tags.map((tag) => (
-            <button
-              key={tag.id}
-              className={`filter-tag ${
-                selectedTags.includes(tag.label)
-                  ? "filter-tag--active"
-                  : "filter-tag--inactive"
-              }`}
-              onClick={() => toggleTag(tag.label)}
-              id={`tag-${tag.id}`}
-            >
-              {tag.label}
-            </button>
-          ))}
-        </div>
+        <section id="filter-section">
+          <h2 className="section-title">🔎 絞り込んで探す</h2>
+          <div className="filter-tags" id="filter-tags">
+            {data.tags.map((tag) => (
+              <button
+                key={tag.id}
+                className={`filter-tag ${
+                  selectedTags.includes(tag.label)
+                    ? "filter-tag--active"
+                    : "filter-tag--inactive"
+                }`}
+                onClick={() => toggleTag(tag.label)}
+                id={`tag-${tag.id}`}
+              >
+                {tag.label}
+              </button>
+            ))}
+          </div>
+        </section>
 
         {/* 今日のイベント */}
         <section id="today-events">
@@ -245,17 +244,11 @@ export default function Home() {
           ) : (
             <p className="empty-message">該当するイベントはありません</p>
           )}
-          {!showMoreUpcoming && upcomingEvents.length > 10 && (
-            <div className="more-btn-wrapper">
-              <button
-                className="more-btn"
-                onClick={() => setShowMoreUpcoming(true)}
-                id="more-upcoming-btn"
-              >
-                もっと見る
-              </button>
-            </div>
-          )}
+          <div className="more-link-wrapper">
+            <Link href="/events" className="more-link" id="more-events-btn">
+              &gt;&gt; もっとワクワクを探す
+            </Link>
+          </div>
         </section>
 
         {/* コミュニティ */}
@@ -265,6 +258,15 @@ export default function Home() {
             {data.communities.map((community) => (
               <CommunityCard key={community.id} community={community} />
             ))}
+          </div>
+          <div className="more-link-wrapper">
+            <Link
+              href="/communities"
+              className="more-link"
+              id="more-communities-btn"
+            >
+              &gt;&gt; もっとコミュニティを探す
+            </Link>
           </div>
         </section>
 
