@@ -1,17 +1,25 @@
 import BottomNav from "@/components/BottomNav";
 import CommunityCard from "@/components/CommunityCard";
-import EventCardCarousel from "@/components/EventCardCarousel";
 import EventCardRow from "@/components/EventCardRow";
+import EventCardVertical from "@/components/EventCardVertical";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import data from "@/data/data.json";
 import Head from "next/head";
-import { useMemo, useState } from "react";
+import Link from "next/link";
+import { useCallback, useEffect, useMemo, useState } from "react";
+
+function getDayOfWeek(dateStr) {
+  const days = ["日", "月", "火", "水", "木", "金", "土"];
+  const d = new Date(dateStr);
+  return days[d.getDay()];
+}
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedTags, setSelectedTags] = useState([]);
   const [showMoreUpcoming, setShowMoreUpcoming] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const today = new Date().toISOString().split("T")[0];
 
@@ -19,6 +27,21 @@ export default function Home() {
   const hotEvents = data.events
     .filter((e) => e.isHot)
     .sort((a, b) => new Date(a.deadline) - new Date(b.deadline));
+
+  // 自動スライド（3秒ごと）
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev + 1) % hotEvents.length);
+  }, [hotEvents.length]);
+
+  const prevSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev - 1 + hotEvents.length) % hotEvents.length);
+  }, [hotEvents.length]);
+
+  useEffect(() => {
+    if (hotEvents.length <= 1) return;
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval);
+  }, [hotEvents.length, nextSlide]);
 
   // タグ切り替え
   const toggleTag = (label) => {
@@ -30,14 +53,12 @@ export default function Home() {
   // フィルタリング
   const filteredEvents = useMemo(() => {
     return data.events.filter((event) => {
-      // 検索
       if (searchQuery) {
         const q = searchQuery.toLowerCase();
         const matchTitle = event.title.toLowerCase().includes(q);
         const matchTag = event.tags.some((t) => t.toLowerCase().includes(q));
         if (!matchTitle && !matchTag) return false;
       }
-      // タグフィルタ
       if (selectedTags.length > 0) {
         const hasTag = selectedTags.some((tag) => event.tags.includes(tag));
         if (!hasTag) return false;
@@ -72,6 +93,27 @@ export default function Home() {
       <div className="page-main">
         <Header />
 
+        {/* ヒーローバナー */}
+        <div className="hero-banner" id="hero-banner">
+          <img
+            src="/images/hero_banner.jpg"
+            alt="富山のワクワクするイベント"
+            className="hero-banner__image"
+          />
+        </div>
+        <div className="hero-catchphrase" id="hero-catchphrase">
+          <div className="hero-catchphrase__inner">
+            <span className="hero-catchphrase__accent">✨</span>
+            <p className="hero-catchphrase__text">
+              富山で、新しい<em>ワクワク</em>を見つけよう
+            </p>
+            <span className="hero-catchphrase__accent">✨</span>
+          </div>
+          <p className="hero-catchphrase__sub">
+            イベント・コミュニティ情報をまとめてチェック
+          </p>
+        </div>
+
         {/* 検索バー */}
         <div className="search-bar" id="search-bar">
           <div className="search-bar__input-wrapper">
@@ -87,13 +129,75 @@ export default function Home() {
           </div>
         </div>
 
-        {/* HOTなイベント カルーセル */}
+        {/* 締切が近いイベント カルーセル（自動スライド） */}
         <section className="carousel-section" id="hot-events">
           <h2 className="section-title">🔥 締切が近いイベント</h2>
-          <div className="carousel">
-            {hotEvents.map((event) => (
-              <EventCardCarousel key={event.id} event={event} />
-            ))}
+          <div className="slideshow">
+            <div className="slideshow__track">
+              {hotEvents.map((event, index) => (
+                <Link
+                  key={event.id}
+                  href={`/event/${event.id}`}
+                  className={`slideshow__slide ${index === currentSlide ? "slideshow__slide--active" : ""}`}
+                >
+                  <img
+                    src={event.imageUrl}
+                    alt={event.title}
+                    className="slideshow__slide-image"
+                  />
+                  <div className="slideshow__slide-info">
+                    <p className="slideshow__slide-title">{event.title}</p>
+                    <p className="slideshow__slide-meta">
+                      📅 {event.date}（{getDayOfWeek(event.date)}） {event.time}
+                    </p>
+                    <p className="slideshow__slide-tags">
+                      🏷️ {event.tags.join("　")}
+                    </p>
+                    <p className="slideshow__slide-deadline">
+                      ⏰ 締切 {event.deadline}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            {/* 矢印ボタン */}
+            {hotEvents.length > 1 && (
+              <>
+                <button
+                  className="slideshow__arrow slideshow__arrow--prev"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    prevSlide();
+                  }}
+                  aria-label="前のイベント"
+                >
+                  ‹
+                </button>
+                <button
+                  className="slideshow__arrow slideshow__arrow--next"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    nextSlide();
+                  }}
+                  aria-label="次のイベント"
+                >
+                  ›
+                </button>
+              </>
+            )}
+
+            {/* ドット */}
+            <div className="slideshow__dots">
+              {hotEvents.map((_, index) => (
+                <button
+                  key={index}
+                  className={`slideshow__dot ${index === currentSlide ? "slideshow__dot--active" : ""}`}
+                  onClick={() => setCurrentSlide(index)}
+                  aria-label={`スライド ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </section>
 
@@ -129,13 +233,13 @@ export default function Home() {
           )}
         </section>
 
-        {/* 近日開催のイベント */}
+        {/* 近日開催のイベント（カードグリッド） */}
         <section id="upcoming-events">
           <h2 className="section-title">📅 近日開催のイベント</h2>
           {visibleUpcoming.length > 0 ? (
-            <div className="event-list stagger-children">
+            <div className="event-grid stagger-children">
               {visibleUpcoming.map((event) => (
-                <EventCardRow key={event.id} event={event} />
+                <EventCardVertical key={event.id} event={event} />
               ))}
             </div>
           ) : (

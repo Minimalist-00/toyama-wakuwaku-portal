@@ -75,12 +75,31 @@
       },
       "isHot": false,
       "type": "event"
+    },
+    {
+      "id": "evt005",
+      "title": "ポートランド起業家ビジネス研修成果報告会",
+      "description": "ポートランドでの起業家ビジネス研修に参加した富山の若者たちが、現地で学んだビジネスモデルの作り方やスタートアップ文化について報告します。富山県庁本館7階の会場参加またはZoomでのオンライン参加が可能です。起業や海外ビジネスに興味がある方はぜひご参加ください！",
+      "date": "2026-03-13",
+      "time": "10:00〜12:00",
+      "location": "富山県庁本館7階 / オンライン（Zoom）",
+      "imageUrl": "/images/event_005.jpg",
+      "tags": ["学生向け", "参加費無料", "報告会", "オンライン可"],
+      "deadline": "2026-03-12",
+      "applicationUrl": "https://example.com/apply/evt005",
+      "contact": {
+        "email": "info@g-bridge.jp",
+        "instagram": "@toyama_wakuwaku",
+        "line": "@gbridge"
+      },
+      "isHot": true,
+      "type": "event"
     }
   ],
   "communities": [
     {
       "id": "com001",
-      "title": "寄処（よりど）",
+      "title": "泊まれる図書館 寄処（よすが）",
       "description": "富山市にある若者のたまり場。起業・留学・やりたいことを話せる仲間が集まる場所。毎週イベントあり。",
       "location": "富山市",
       "memberCount": 80,
@@ -120,7 +139,8 @@
     { "id": "free", "label": "参加費無料" },
     { "id": "workshop", "label": "体験会" },
     { "id": "report", "label": "報告会" },
-    { "id": "food", "label": "ご飯が食べられる" }
+    { "id": "food", "label": "ご飯が食べられる" },
+    { "id": "online", "label": "オンライン可" }
   ],
   "company": {
     "name": "株式会社G-Bridge",
