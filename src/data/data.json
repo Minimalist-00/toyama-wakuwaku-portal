@@ -2,117 +2,242 @@
   "events": [
     {
       "id": "evt001",
-      "title": "アメリカ研修報告会 〜世界を見てきた富山の学生たち〜",
-      "description": "富山県とオレゴン州の提携を活かした2週間のアントレプレナーシップ研修に参加したメンバーが、現地での気づきや変化をリアルに語ります。海外に興味がある人も、まだピンときていない人も大歓迎！",
+      "title": "TOYAMA STARTUP WEEKEND 2026",
+      "description": "54時間でアイデアを形にする起業体験イベント。起業家精神を持つ若者たちが集い、新しいビジネスモデルを創り出します。",
       "date": "2026-03-20",
-      "time": "18:00〜20:00",
-      "location": "寄処（富山市）",
+      "time": "18:00〜（3日間）",
+      "location": "スケッチラボ（富山市）",
       "imageUrl": "/images/event_001.jpg",
-      "tags": ["学生向け", "参加費無料", "報告会"],
-      "deadline": "2026-03-18",
-      "applicationUrl": "https://example.com/apply/evt001",
+      "tags": [
+        "学生向け",
+        "ハッカソン",
+        "起業"
+      ],
+      "deadline": "2026-03-15",
+      "applicationUrl": "https://www.kokuchpro.com/event/f1eaa9b2447990c76ce5f2c41804b4d6/",
       "contact": {
-        "email": "info@g-bridge.jp",
-        "instagram": "@toyama_wakuwaku",
-        "line": "@gbridge"
-      },
-      "isHot": true,
-      "type": "event"
-    },
-    {
-      "id": "evt002",
-      "title": "一眼レフで富山を撮ろう！初心者カメラ体験会",
-      "description": "カメラが好きな人・興味ある人が集まって、富山の街を撮り歩くイベントです。機材の貸し出しあり。終わったあとはカフェでご飯も！",
-      "date": "2026-03-22",
-      "time": "13:00〜16:00",
-      "location": "富山城址公園 集合",
-      "imageUrl": "/images/event_002.jpg",
-      "tags": ["体験会", "ご飯が食べられる", "学生向け"],
-      "deadline": "2026-03-20",
-      "applicationUrl": "https://example.com/apply/evt002",
-      "contact": {
-        "email": "camera@example.com",
-        "instagram": "@toyama_camera_club",
+        "email": "startup@example.com",
+        "instagram": "@toyama_startup",
         "line": null
       },
       "isHot": true,
-      "type": "event"
+      "type": "event",
+      "contentHtml": "\n            <h3>🚀 金曜の夜から日曜にかけて、あなたの人生が変わる54時間！</h3>\n            <p>「起業」に興味はあるけれど、何から始めていいかわからない。<br>\n            アイデアはあるけれど、一緒に実現する仲間がいない。<br>\n            そんな悩みを抱える学生や若手社会人のための、超実践型プログラムです！</p>\n            <p><strong>【イベントの特徴】</strong></p>\n            <ul>\n                <li>参加者同士でチームを組み、たった3日間でビジネスプランのプロトタイプを作成</li>\n                <li>第一線で活躍する起業家や投資家からの直接メンタリング</li>\n                <li>同じ志を持つ熱い仲間との出会い</li>\n            </ul>\n            <div style=\"margin:20px 0;\"><img src=\"/images/event_002.jpg\" alt=\"Mentoring phase\" style=\"border-radius:12px;width:100%;\"></div>\n            <p>失敗を恐れず、まずは一歩を踏み出してみませんか？世界を変えるアイディアは、あなたの頭の中に眠っているかもしれません。</p>\n        "
+    },
+    {
+      "id": "evt002",
+      "title": "Local x Global: 富山から世界へ挑むキャリアデザイン",
+      "description": "富山にいながらグローバルな視点で活躍するゲストを招き、これからの「ローカライゼーション」と「キャリア」について考えるトークセッション。",
+      "date": "2026-03-25",
+      "time": "19:00〜21:00",
+      "location": "オンライン / 寄処（富山市）",
+      "imageUrl": "/images/event_002.jpg",
+      "tags": [
+        "キャリア",
+        "オンライン可",
+        "学生向け"
+      ],
+      "deadline": "2026-03-24",
+      "applicationUrl": "https://www.kokuchpro.com/event/b5e3240ea0baafec4a8a3a29584b4d11/",
+      "contact": {
+        "email": "local-global@example.com",
+        "instagram": "@local_global_toyama",
+        "line": null
+      },
+      "isHot": true,
+      "type": "event",
+      "contentHtml": "\n            <h3>🌍 地元に根ざしつつ、世界とつながる新しい働き方</h3>\n            <p>「地方にいるとチャンスが少ない」というのは過去の話。<br>\n            インターネットやリモートワークの普及により、富山という自然豊かで文化的なベースを持ちながら、世界中のプロジェクトに参加する生き方が可能になっています。</p>\n            <p>本イベントでは、実際に富山を拠点に海外企業とビジネスを展開している起業家と、海外留学を経て富山にUターンしたクリエイターのお二人をお招きし、<strong>「ローカルでの豊かさ×グローバルな挑戦」</strong>をテーマにパネルディスカッションを行います。</p>\n            <div style=\"margin:20px 0;\"><img src=\"/images/event_003.jpg\" alt=\"Panel Discussion\" style=\"border-radius:12px;width:100%;\"></div>\n            <p><strong>【こんな人におすすめ】</strong></p>\n            <ul>\n                <li>将来のキャリアに悩んでいる学生</li>\n                <li>地方移住やUターンに興味がある社会人</li>\n                <li>グローバルに活躍したいけれど、今の場所も好きな人</li>\n            </ul>\n        "
     },
     {
       "id": "evt003",
-      "title": "つながる富山 Vol.3 〜若者と企業の交流会〜",
-      "description": "富山で働く若手社会人・学生と、地元企業の人が気軽に話せる交流イベント。ご飯とドリンク付き。肩書き関係なく、ただ話したい人が集まります。",
-      "date": "2026-04-05",
-      "time": "19:00〜21:00",
+      "title": "クリエイターズ・ミートアップ富山 Vol.5",
+      "description": "デザイナー、エンジニア、映像作家など、クリエイティブな分野に興味がある若者が集まる交流会。作品のピッチングやコラボ相手探しに最適です。",
+      "date": "2026-03-14",
+      "time": "14:00〜17:00",
       "location": "おもしろベース（富山市）",
       "imageUrl": "/images/event_003.jpg",
-      "tags": ["ご飯が食べられる", "参加費無料"],
-      "deadline": "2026-04-03",
-      "applicationUrl": "https://example.com/apply/evt003",
+      "tags": [
+        "交流会",
+        "参加費無料"
+      ],
+      "deadline": "2026-03-12",
+      "applicationUrl": "https://www.toyama-sogyo.jp/news/7492.html",
       "contact": {
-        "email": "tsunagaru@example.com",
-        "instagram": "@tsunagaru_toyama",
-        "line": "@tsunagaru"
+        "email": "creators@example.com",
+        "instagram": "@creators_mtg_toyama",
+        "line": null
       },
       "isHot": false,
-      "type": "event"
+      "type": "event",
+      "contentHtml": "\n            <h3>🎨 あなたの「好き」を仕事にするヒントが見つかる場所</h3>\n            <p>クリエイターズ・ミートアップは、富山県内外の若手クリエイターがジャンルの垣根を越えて集結するコミュニティイベントです。</p>\n            <p>今回は「AI時代におけるクリエイティビティの再定義」をメインテーマに、最新の生成AIツールを活用したワークフローのLT（ライトニングトーク）大会を実施します。</p>\n            <div style=\"margin:20px 0;\"><img src=\"/images/event_004.jpg\" alt=\"Creators working\" style=\"border-radius:12px;width:100%;\"></div>\n            <p>後半の交流会では、お茶やお菓子をつまみながらリラックスした雰囲気で情報交換。<br>\n            「一緒にアプリを作ってくれるデザイナーを探している」「UI設計のアドバイスが欲しい」といったマッチングの場としてもご活用ください！初心者や学生の方も大歓迎です。</p>\n        "
     },
     {
       "id": "evt004",
-      "title": "Human Design Center プログラム説明会",
-      "description": "南砺市のHuman Design Centerが提供するビジネスプラン作成プログラムの説明会。地域課題解決やアントレプレナーシップに興味がある人向け。",
+      "title": "次世代モビリティハッカソン in 富山",
+      "description": "富山の交通課題をテクノロジーで解決！プログラミング初心者から経験者まで、チームでアプリ開発に挑戦します。",
+      "date": "2026-03-28",
+      "time": "09:00〜19:00",
+      "location": "富山大学 五福キャンパス",
+      "imageUrl": "/images/event_004.jpg",
+      "tags": [
+        "ハッカソン",
+        "学生向け",
+        "テクノロジー"
+      ],
+      "deadline": "2026-03-21",
+      "applicationUrl": "https://www.pref.toyama.jp/140203/kodomokosodate/wakamono/npo/meetup_in_toyama.html",
+      "contact": {
+        "email": "hackathon@example.com",
+        "instagram": "@toyama_hack",
+        "line": null
+      },
+      "isHot": false,
+      "type": "event",
+      "contentHtml": "\n            <h3>🚗 車社会の富山をアップデートせよ！</h3>\n            <p>1日という限られた時間の中で、チームでアイデア出しからプロトタイプ開発、プレゼンテーションまでを行うハッカソンイベントです。</p>\n            <p>富山県の公共交通データやオープンデータを活用し、「高齢者の移動支援」「観光客の周遊促進」「雪道の安全な移動」など、地域が抱えるリアルな課題に挑みます。</p>\n            <div style=\"margin:20px 0;\"><img src=\"/images/event_005.jpg\" alt=\"Coding together\" style=\"border-radius:12px;width:100%;\"></div>\n            <p>メンターとして現役のソフトウェアエンジニアがサポートするので、プログラミング経験が浅い方や企画・デザインで参画したい方も大歓迎！<br>\n            優秀なプロトタイプには、地元企業からの事業化支援も検討されます。</p>\n        "
+    },
+    {
+      "id": "evt005",
+      "title": "ソーシャルビジネス実践ワークショップ",
+      "description": "「社会課題の解決」と「ビジネス」を両立させる仕組みを学ぶ実践型ワークショップ。社会起業家を目指す若者へ。",
+      "date": "2026-03-15",
+      "time": "13:00〜16:30",
+      "location": "富山県民共生センター サンフォルテ",
+      "imageUrl": "/images/event_005.jpg",
+      "tags": [
+        "ワークショップ",
+        "社会課題解消",
+        "起業"
+      ],
+      "deadline": "2026-03-10",
+      "applicationUrl": "https://t-startup.jp/news/student-entrepreneurship-challenge-course/",
+      "contact": {
+        "email": "social-biz@example.com",
+        "instagram": "@social_biz_toyama",
+        "line": null
+      },
+      "isHot": true,
+      "type": "event",
+      "contentHtml": "\n            <h3>🌱 想いを形にし、持続可能な事業を創る</h3>\n            <p>環境問題、教育格差、地域の過疎化など、私たちが直面している多くの社会課題。<br>\n            それらをボランティアではなく、「ビジネス」のアプローチで解決していくソーシャルビジネスへの関心が、若者の間で急速に高まっています。</p>\n            <p>このワークショップでは、実際に富山県内でソーシャルビジネスを展開している起業家を講師に招き、課題発見のフレームワークから、収益モデルの設計までをハンズオンで学びます。</p>\n            <div style=\"margin:20px 0;\"><img src=\"/images/event_006.jpg\" alt=\"Workshop presentation\" style=\"border-radius:12px;width:100%;\"></div>\n            <p>あなたの「なんとかしたい」というパッションを、具体的なビジネスプランへと昇華させる第一歩となるはずです。仲間と共に、社会にポジティブなインパクトを与えましょう！</p>\n        "
+    },
+    {
+      "id": "evt006",
+      "title": "U-25 未来の教育デザイン研究所",
+      "description": "「こんな学校があったらいいな」を本気で考える。25歳以下の若者中心に、未来の教育をデザインする対話式イベント。",
+      "date": "2026-03-22",
+      "time": "15:00〜18:00",
+      "location": "高岡市生涯学習センター",
+      "imageUrl": "/images/event_006.jpg",
+      "tags": [
+        "教育",
+        "学生向け",
+        "参加費無料"
+      ],
+      "deadline": "2026-03-20",
+      "applicationUrl": "https://example.com/apply/evt006",
+      "contact": {
+        "email": "edu-design@example.com",
+        "instagram": "@edu_future_u25",
+        "line": null
+      },
+      "isHot": false,
+      "type": "event",
+      "contentHtml": "\n            <h3>📚 正解のない時代に、私たちは何を学ぶべきか？</h3>\n            <p>画一的な教育制度から、個人の多様性を尊重する教育へ。<br>\n            テクノロジーの進化や社会の変化に伴い、これからの時代に必要な「学びのあり方」は大きく変わろうとしています。</p>\n            <p>当イベントは、教育の最前線で学ぶ学生たちや若手教員が主役となって、理想の教育システムや学校の新しい形についてフラットに議論する参加型セッションです。</p>\n            <div style=\"margin:20px 0;\"><img src=\"/images/event_001.jpg\" alt=\"Students talking\" style=\"border-radius:12px;width:100%;\"></div>\n            <ul>\n                <li>テストの点数で評価されない学校</li>\n                <li>地域全体がキャンパスになる学び</li>\n                <li>学生が自分たちでカリキュラムを作る授業</li>\n            </ul>\n            <p>あなたの自由な発想が、未来の教育を変えるきっかけになるかもしれません！</p>\n        "
+    },
+    {
+      "id": "evt007",
+      "title": "Human Design Center アントレプレナーシップ・プログラム 1期生募集説明会",
+      "description": "富山県総合デザインセンターが本気で立ち上げる次世代リーダー育成プログラム。デザイン思考で地域発のイノベーションを起こす！",
       "date": "2026-03-28",
       "time": "14:00〜15:30",
-      "location": "オンライン（Zoom）",
-      "imageUrl": "/images/event_004.jpg",
-      "tags": ["学生向け", "参加費無料", "報告会"],
+      "location": "富山県総合デザインセンター (Human Design Center)",
+      "imageUrl": "/images/event_hdc.png",
+      "tags": [
+        "起業",
+        "デザイン思考",
+        "学生向け"
+      ],
       "deadline": "2026-03-26",
-      "applicationUrl": "https://www.humandesigncenter.org/program",
+      "applicationUrl": "https://t-startup.jp/news/ecosystem-summit-2026-report/",
       "contact": {
         "email": "info@humandesigncenter.org",
         "instagram": "@humandesigncenter",
         "line": null
       },
-      "isHot": false,
-      "type": "event"
+      "isHot": true,
+      "type": "event",
+      "contentHtml": "\n            <h3>🏫 デザイン思考 × ビジネスで枠を超える半年間</h3>\n            <p>富山県総合デザインセンター（Human Design Center）が、次世代のイノベーターを育成するためのプログラム「HDC Entrepreneurship Program」を2026年4月より開講します。</p>\n            <p>本説明会では、プログラムの詳細なカリキュラム、講師陣の紹介、そして過去の類似プログラムから生まれた成功事例について詳しく解説します。<br>\n            <strong>「デザイン」はもはやアートやグラフィックだけでなく、ビジネスモデルや社会課題を解決するための強力な武器です。</strong></p>\n            <div style=\"margin:20px 0;\"><img src=\"/images/event_hdc.png\" alt=\"Human Design Center Exterior\" style=\"border-radius:12px;width:100%;\"></div>\n            <p><strong>【提供されるリソース】</strong></p>\n            <ul>\n                <li>24時間利用可能なコワーキング・メイカースペース</li>\n                <li>県外・海外からの豪華なゲスト講師陣によるメンタリング</li>\n                <li>最終ピッチコンテストでのシード資金獲得のチャンス</li>\n            </ul>\n            <p>少しでも興味のある方は、まずはこの説明会にご参加ください。新しい挑戦への扉がここにあります！</p>\n        "
     },
     {
-      "id": "evt005",
-      "title": "ポートランド起業家ビジネス研修成果報告会",
-      "description": "ポートランドでの起業家ビジネス研修に参加した富山の若者たちが、現地で学んだビジネスモデルの作り方やスタートアップ文化について報告します。富山県庁本館7階の会場参加またはZoomでのオンライン参加が可能です。起業や海外ビジネスに興味がある方はぜひご参加ください！",
-      "date": "2026-03-13",
-      "time": "10:00〜12:00",
-      "location": "富山県庁本館7階 / オンライン（Zoom）",
-      "imageUrl": "/images/event_005.jpg",
-      "tags": ["学生向け", "参加費無料", "報告会", "オンライン可"],
-      "deadline": "2026-03-12",
-      "applicationUrl": "https://example.com/apply/evt005",
+      "id": "evt008",
+      "title": "とやまSDGsアクションピッチ",
+      "description": "10代、20代の若者が考える持続可能な富山へのアイデアピッチコンテスト。企業とのマッチングも行われます。",
+      "date": "2026-03-21",
+      "time": "13:30〜17:30",
+      "location": "富山国際会議場",
+      "imageUrl": "/images/event_001.jpg",
+      "tags": [
+        "SDGs",
+        "ピッチ",
+        "社会課題解消"
+      ],
+      "deadline": "2026-03-10",
+      "applicationUrl": "https://www.pref.toyama.jp/1400/event/20260321_shiawaseru.html",
       "contact": {
-        "email": "info@g-bridge.jp",
-        "instagram": "@toyama_wakuwaku",
-        "line": "@gbridge"
+        "email": "sdgs@example.com",
+        "instagram": "@toyama_sdgs_youth",
+        "line": null
+      },
+      "isHot": false,
+      "type": "event",
+      "contentHtml": "\n            <h3>🌿 私たちの地域の未来を、私たちが創る</h3>\n            <p>海洋プラスチック問題、フードロス、そして中山間地域の空き家活用......。<br>\n            富山県の豊かな自然と文化を次世代に残すため、若い世代の視点と行動力が求められています。</p>\n            <div style=\"margin:20px 0;\"><img src=\"/images/event_002.jpg\" alt=\"SDGs presentation\" style=\"border-radius:12px;width:100%;\"></div>\n            <p>本イベントでは、書類選考を突破した10組の学生・若手チームが、自らの実践やアイデアをステージ上で熱くアピールするピッチコンテストを実施します。<br>\n            会場にはSDGsに先進的に取り組む地元企業の担当者も多数参加し、優れたアイデアには企業との共同プロジェクトへと発展するチャンスも用意されています。</p>\n            <p>オーディエンス参加も大歓迎！同世代の活躍に刺激を受け、あなたも「次の一歩」を踏み出すヒントを見つけてください。</p>\n        "
+    },
+    {
+      "id": "evt009",
+      "title": "Z世代マーケティング会議",
+      "description": "若者のトレンドを紐解き、新しいサービスや商品企画を地元企業メンバーと一緒に考えるワークショップです。",
+      "date": "2026-03-18",
+      "time": "18:30〜20:30",
+      "location": "HATCH（富山市）",
+      "imageUrl": "/images/event_003.jpg",
+      "tags": [
+        "マーケティング",
+        "学生向け",
+        "企業交流"
+      ],
+      "deadline": "2026-03-16",
+      "applicationUrl": "https://example.com/apply/evt009",
+      "contact": {
+        "email": "z-marketing@example.com",
+        "instagram": "@z_marketing_toyama",
+        "line": null
+      },
+      "isHot": false,
+      "type": "event",
+      "contentHtml": "\n            <h3>📱Z世代のリアルな声を、企業のビジネス戦略へ！</h3>\n            <p>「若者のテレビ離れ」「タイパ重視」「推し活」など、独自の価値観を持つと言われるZ世代。<br>\n            このイベントでは、富山の地元企業で商品企画やマーケティングを担当する社員と、Z世代の学生・若手社会人がフラットな立場でディスカッションを行います。</p>\n            <div style=\"margin:20px 0;\"><img src=\"/images/event_004.jpg\" alt=\"Marketing brainstorm\" style=\"border-radius:12px;width:100%;\"></div>\n            <p><strong>【セッション内容】</strong></p>\n            <ul>\n                <li>最新のSNSトレンドや消費行動に関するインプットトーク</li>\n                <li>地元企業の既存商品に対する「率直なフィードバック」と「改善アイデア」のブレスト</li>\n                <li>若者が本当に欲しいと感じる新サービス企画のワークショップ</li>\n            </ul>\n            <p>企業に直接アイデアを提案できる貴重な機会です。マーケティングに興味がある方、自分の意見で世の中のサービスを変えてみたい方はぜひご参加ください！</p>\n        "
+    },
+    {
+      "id": "evt010",
+      "title": "プロンプトエンジニアリング実践講座",
+      "description": "生成AIを文房具のように使いこなす！AIツールを活用して業務効率化やクリエイティブ制作を行う実践的なスキルを学びます。",
+      "date": "2026-03-29",
+      "time": "14:00〜16:00",
+      "location": "オンライン（Zoom）",
+      "imageUrl": "/images/event_005.jpg",
+      "tags": [
+        "AI",
+        "スキルアップ",
+        "オンライン可"
+      ],
+      "deadline": "2026-03-28",
+      "applicationUrl": "https://example.com/apply/evt010",
+      "contact": {
+        "email": "ai-master@example.com",
+        "instagram": "@ai_toyama",
+        "line": null
       },
       "isHot": true,
-      "type": "event"
-    },
-    {
-      "id": "evt006",
-      "title": "富山の川をキレイに！ボランティア＆花植えイベント",
-      "description": "松川沿いの清掃活動と花植えを行うボランティアイベントです。活動後は参加者みんなでピクニック！自然が好きな人、地域に貢献したい人、新しい友達を作りたい人、誰でも歓迎です。",
-      "date": "2026-04-12",
-      "time": "09:00〜13:00",
-      "location": "松川べり（富山市）",
-      "imageUrl": "/images/event_006.jpg",
-      "tags": ["体験会", "参加費無料", "ご飯が食べられる"],
-      "deadline": "2026-04-10",
-      "applicationUrl": "https://example.com/apply/evt006",
-      "contact": {
-        "email": "volunteer@example.com",
-        "instagram": "@toyama_volunteer",
-        "line": "@volunteer_toyama"
-      },
-      "isHot": false,
-      "type": "event"
+      "type": "event",
+      "contentHtml": "\n            <h3>🤖 AIに使われるのではなく、AIを使いこなす人材へ</h3>\n            <p>ChatGPTなどの生成AIは日々進化しており、すでに多くの仕事や学習のあり方を変革しています。しかし、「使ってみたけれど、期待した回答が得られない」と悩んでいる方も多いのではないでしょうか？</p>\n            <p>この講座では、AIから質の高い出力を引き出すための「プロンプト（指示文）」の作成テクニックを、ハンズオン形式で基礎から徹底的に学びます。</p>\n            <div style=\"margin:20px 0;\"><img src=\"/images/event_006.jpg\" alt=\"AI interaction screen\" style=\"border-radius:12px;width:100%;\"></div>\n            <p><strong>【学べるポイント】</strong></p>\n            <ul>\n                <li>プロンプトの基本構造（役割・文脈・指示・出力形式）</li>\n                <li>Few-shotプロンプティングなどの応用テクニック</li>\n                <li>企画書作成、データ要約、外国語学習など、日常で役立つ具体的なユースケース</li>\n            </ul>\n            <p>文系・理系問わず、これからの時代を生き抜く必須スキルを手に入れましょう！PC1台あればどこからでも参加可能です。</p>\n        "
     }
   ],
   "communities": [
@@ -123,7 +248,10 @@
       "location": "富山市",
       "memberCount": 80,
       "imageUrl": "/images/community_001.jpg",
-      "tags": ["学生向け", "参加費無料"],
+      "tags": [
+        "学生向け",
+        "参加費無料"
+      ],
       "contact": {
         "email": "yorido@example.com",
         "instagram": "@yorido_toyama",
@@ -139,7 +267,9 @@
       "location": "富山市",
       "memberCount": 50,
       "imageUrl": "/images/community_002.jpg",
-      "tags": ["参加費無料"],
+      "tags": [
+        "参加費無料"
+      ],
       "contact": {
         "email": "omoshiro@example.com",
         "instagram": "@omoshiro_base",
@@ -150,16 +280,39 @@
     }
   ],
   "mypage": {
-    "appliedEvents": ["evt001", "evt003"],
-    "pastEvents": ["evt002"]
+    "appliedEvents": [
+      "evt001",
+      "evt003"
+    ],
+    "pastEvents": [
+      "evt002"
+    ]
   },
   "tags": [
-    { "id": "student", "label": "学生向け" },
-    { "id": "free", "label": "参加費無料" },
-    { "id": "workshop", "label": "体験会" },
-    { "id": "report", "label": "報告会" },
-    { "id": "food", "label": "ご飯が食べられる" },
-    { "id": "online", "label": "オンライン可" }
+    {
+      "id": "student",
+      "label": "学生向け"
+    },
+    {
+      "id": "free",
+      "label": "参加費無料"
+    },
+    {
+      "id": "workshop",
+      "label": "体験会"
+    },
+    {
+      "id": "report",
+      "label": "報告会"
+    },
+    {
+      "id": "food",
+      "label": "ご飯が食べられる"
+    },
+    {
+      "id": "online",
+      "label": "オンライン可"
+    }
   ],
   "company": {
     "name": "株式会社G-Bridge",

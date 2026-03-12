@@ -1,4 +1,3 @@
-import BottomNav from "@/components/BottomNav";
 import TagBadge from "@/components/TagBadge";
 import data from "@/data/data.json";
 import Head from "next/head";
@@ -29,7 +28,6 @@ export default function EventDetail() {
           <span className="detail-header__title">Not Found</span>
         </div>
         <p className="empty-message">お探しのページは見つかりませんでした。</p>
-        <BottomNav />
       </>
     );
   }
@@ -113,35 +111,51 @@ export default function EventDetail() {
           )}
 
           {/* 概要 */}
-          <h2 className="event-detail__section-title">概要</h2>
+          <h2 className="event-detail__section-title">イベントについて</h2>
           <p className="event-detail__description">{item.description}</p>
 
-          {/* 申し込みボタン */}
-          {hasApplicationUrl ? (
-            <a
-              href={item.applicationUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="event-detail__apply-btn"
-              id="apply-btn"
-            >
-              🎉 申し込む
-            </a>
-          ) : (
-            <div className="event-detail__apply-btn event-detail__apply-btn--disabled">
-              お問い合わせください
+          {/* 詳細コンテンツ */}
+          {item.contentHtml && (
+            <div 
+              className="event-detail__rich-content"
+              dangerouslySetInnerHTML={{ __html: item.contentHtml }}
+            />
+          )}
+
+
+
+          {/* 元のサイトへのリンク */}
+          {item.applicationUrl && (
+            <div className="event-detail__original-link-wrapper" style={{ marginBottom: "24px" }}>
+              <a 
+                href={item.applicationUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="event-detail__original-link"
+                style={{ 
+                  display: "inline-flex", 
+                  alignItems: "center", 
+                  gap: "4px",
+                  color: "var(--primary-dark)",
+                  fontWeight: "700",
+                  textDecoration: "underline",
+                  fontSize: "15px"
+                }}
+              >
+                🔗 掲載元のサイトを見る
+              </a>
             </div>
           )}
 
           {/* 連絡先 */}
           {item.contact && (
             <>
-              <h2 className="event-detail__section-title">連絡先</h2>
+              <h2 className="event-detail__section-title">お問い合わせ</h2>
               <p
                 className="text-sm"
                 style={{ color: "var(--text-sub)", marginBottom: "12px" }}
               >
-                申し込みが難しい場合はこちらへ
+                イベントに関するご質問や申し込みについて
               </p>
               <div className="event-detail__contact">
                 {item.contact.email && (
@@ -193,7 +207,25 @@ export default function EventDetail() {
         </div>
       </div>
 
-      <BottomNav />
+      {hasApplicationUrl ? (
+        <div className="event-detail__sticky-footer">
+          <a
+            href={item.applicationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="event-detail__apply-btn event-detail__apply-btn--sticky"
+            id="apply-btn"
+          >
+            申し込む
+          </a>
+        </div>
+      ) : (
+        <div className="event-detail__sticky-footer">
+          <div className="event-detail__apply-btn event-detail__apply-btn--disabled event-detail__apply-btn--sticky">
+            申し込み受付は終了しました
+          </div>
+        </div>
+      )}
     </>
   );
 }

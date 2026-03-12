@@ -32,6 +32,10 @@ export default function EventsPage() {
           <span className="detail-header__title">イベント一覧</span>
         </div>
 
+        <div style={{ padding: "10px", margin: "15px", backgroundColor: "#fff3cd", color: "#856404", borderRadius: "5px", textAlign: "center", fontSize: "0.9rem", border: "1px solid #ffeeba" }}>
+          ※このアプリは現在プロトタイプ（試作版）です。
+        </div>
+
         {/* イベント一覧 */}
         <section id="all-events">
           <h1 className="section-title">📅 すべてのイベント</h1>

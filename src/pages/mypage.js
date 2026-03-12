@@ -28,6 +28,10 @@ export default function MyPage() {
           <h1 className="mypage-header__title">👤 マイページ</h1>
         </div>
 
+        <div style={{ padding: "10px", margin: "15px", backgroundColor: "#fff3cd", color: "#856404", borderRadius: "5px", textAlign: "center", fontSize: "0.9rem", border: "1px solid #ffeeba" }}>
+          ※このアプリは現在プロトタイプ（試作版）です。
+        </div>
+
         {/* 申し込み済みのイベント */}
         <section className="mypage__section" id="applied-events">
           <h2 className="section-title">✅ 申し込み済みのイベント</h2>

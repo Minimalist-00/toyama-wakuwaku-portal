@@ -93,6 +93,10 @@ export default function Home() {
       <div className="page-main">
         <Header />
 
+        <div style={{ padding: "10px", margin: "15px", backgroundColor: "#fff3cd", color: "#856404", borderRadius: "5px", textAlign: "center", fontSize: "0.9rem", border: "1px solid #ffeeba" }}>
+          ※このアプリは現在プロトタイプ（試作版）です。
+        </div>
+
         {/* ヒーローバナー */}
         <div className="hero-banner" id="hero-banner">
           <img
